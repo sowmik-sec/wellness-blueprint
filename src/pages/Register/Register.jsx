@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 function Register() {
-  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, signInWithGoogle } =
+    useContext(AuthContext);
   const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
@@ -23,6 +24,13 @@ function Register() {
           .catch((err) => {
             console.log(err);
           });
+      })
+      .catch((err) => console.error(err));
+  };
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log("signed with google ", result);
       })
       .catch((err) => console.error(err));
   };
@@ -91,7 +99,9 @@ function Register() {
               <button className="btn btn-primary">Register</button>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-outline">Register with google</button>
+              <button onClick={handleGoogleSignIn} className="btn btn-outline">
+                Register with google
+              </button>
             </div>
           </form>
           <p className="text-center mb-6">

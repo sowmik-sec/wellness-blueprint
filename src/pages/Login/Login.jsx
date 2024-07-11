@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 function Login() {
-  const { login } = useContext(AuthContext);
+  const { login, signInWithGoogle } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const handleLogin = (e) => {
@@ -18,6 +18,14 @@ function Login() {
       })
       .catch((err) => console.error(err));
   };
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log("signed with google ", result);
+      })
+      .catch((err) => console.error(err));
+  };
+
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="">
@@ -59,7 +67,9 @@ function Login() {
               <button className="btn btn-primary">Login</button>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-outline">Continue with google</button>
+              <button onClick={handleGoogleSignIn} className="btn btn-outline">
+                Continue with google
+              </button>
             </div>
           </form>
           <p className="text-center mb-6">
