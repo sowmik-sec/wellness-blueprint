@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 function Register() {
   const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -17,6 +18,7 @@ function Register() {
         updateUserProfile(name, photo)
           .then(() => {
             console.log("Username and photo Url updated");
+            navigate("/");
           })
           .catch((err) => {
             console.log(err);
