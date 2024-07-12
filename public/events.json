@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "eventName": "Outdoor Adventure and Hiking Events",
+    "description": "Join us for a thrilling outdoor adventure where we explore scenic trails and breathtaking landscapes. Our guided hiking events are perfect for all fitness levels and provide a great opportunity to connect with nature and meet like-minded individuals. Experience the benefits of physical exercise, fresh air, and stunning views. Don't forget to bring your camera and capture the memories!",
+    "dateTime": "2024-08-15T09:00:00",
+    "location": "Mountain Trails Park",
+    "price": 30,
+    "organizerContact": "contact@hikeadventure.com",
+    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/18/14/16/mountaineer-1834841_1280.jpg",
+    "capacity": 50,
+    "category": "Fitness"
+  },
+  {
+    "id": 2,
+    "eventName": "Nutritional Workshops and Cooking Classes",
+    "description": "Discover the secrets to a healthy diet with our comprehensive nutritional workshops and hands-on cooking classes. Learn from expert nutritionists and chefs who will guide you through the essentials of balanced eating, meal planning, and preparing delicious, nutritious dishes. Whether you're a beginner or looking to refine your skills, our classes offer something for everyone. Take home recipes and knowledge to support your wellness journey.",
+    "dateTime": "2024-08-20T14:00:00",
+    "location": "Wellness Center Kitchen",
+    "price": 25,
+    "organizerContact": "nutrition@wellnesscenter.com",
+    "imageUrl": "https://cdn.pixabay.com/photo/2019/06/18/22/46/cooking-4283413_1280.jpg",
+    "capacity": 30,
+    "category": "Nutrition"
+  },
+  {
+    "id": 3,
+    "eventName": "Fitness Boot Camps",
+    "description": "Challenge yourself with our high-energy fitness boot camps designed to push your limits and achieve your fitness goals. Our boot camps are led by experienced trainers who will provide personalized attention and motivate you through a variety of exercises, including cardio, strength training, and flexibility routines. Suitable for all fitness levels, our sessions are a fun and effective way to get in shape, meet new friends, and enjoy the outdoors.",
+    "dateTime": "2024-08-25T06:00:00",
+    "location": "City Sports Ground",
+    "price": 20,
+    "organizerContact": "fitness@bootcamp.com",
+    "imageUrl": "https://cdn.pixabay.com/photo/2023/09/11/14/19/weight-8246973_1280.jpg",
+    "capacity": 40,
+    "category": "Fitness"
+  },
+  {
+    "id": 4,
+    "eventName": "Mental Health Awareness Seminars",
+    "description": "Join our mental health awareness seminars to gain valuable insights into various aspects of mental well-being. Our seminars cover topics such as stress management, coping strategies, and understanding mental health conditions. Led by experienced mental health professionals, these sessions provide a safe and supportive environment to learn, ask questions, and discuss concerns. Equip yourself with knowledge to support your own mental health and that of others.",
+    "dateTime": "2024-08-30T10:00:00",
+    "location": "Community Hall",
+    "price": 15,
+    "organizerContact": "mentalhealth@awareness.org",
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/01/30/02/20/mental-health-2019924_1280.jpg",
+    "capacity": 100,
+    "category": "Mental Health"
+  },
+  {
+    "id": 5,
+    "eventName": "Mindfulness and Stress Reduction Workshops",
+    "description": "Participate in our mindfulness and stress reduction workshops to learn techniques that promote relaxation, focus, and overall well-being. Our workshops include guided meditation, breathing exercises, and practical strategies to manage stress in daily life. Led by experienced mindfulness instructors, these sessions provide a tranquil space to unwind and cultivate a sense of inner peace. Perfect for anyone looking to enhance their mental clarity and emotional resilience.",
+    "dateTime": "2024-09-05T13:00:00",
+    "location": "Wellness Center Room A",
+    "price": 18,
+    "organizerContact": "mindfulness@wellnesscenter.com",
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/07/04/20/51/anti-stress-ball-2472605_1280.jpg",
+    "capacity": 35,
+    "category": "Mental Health"
+  },
+  {
+    "id": 6,
+    "eventName": "Wellness Fairs and Expos",
+    "description": "Join us for a day of wellness activities, informative exhibitions, and health screenings at our annual Wellness Fair. This event brings together a diverse range of health and wellness professionals, vendors, and community organizations. Explore the latest in health products, services, and trends. Participate in interactive workshops, fitness demonstrations, and receive free health screenings. This is a family-friendly event with something for everyone, from kids' activities to expert advice.",
+    "dateTime": "2024-09-10T09:00:00",
+    "location": "Downtown Convention Center",
+    "price": 0,
+    "organizerContact": "info@wellnessexpo.com",
+    "imageUrl": "https://cdn.pixabay.com/photo/2019/01/29/02/38/wellness-3961684_1280.jpg",
+    "capacity": 500,
+    "category": "General Wellness"
+  }
+]
