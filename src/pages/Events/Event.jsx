@@ -21,7 +21,7 @@ function formatDate(dateString) {
 }
 
 function Event({ event }) {
-  const { id, eventName, dateTime, description, price, imageUrl } = event;
+  const { eventName, dateTime, description, price, imageUrl } = event;
   return (
     <div className="card bg-base-100 w-96 shadow-xl mx-auto">
       <figure>
@@ -38,7 +38,7 @@ function Event({ event }) {
             <div className="badge badge-outline mr-2">${price}</div>
             <div className="badge badge-outline">{formatDate(dateTime)}</div>
           </div>
-          <Link to={`/event-details/${id}`}>
+          <Link to={`/event-details`} state={{ event }}>
             <button className="btn btn-primary block w-full mt-3">
               See Details
             </button>
