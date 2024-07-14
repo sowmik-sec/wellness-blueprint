@@ -1,5 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
+import { storeToLocalStorage } from "../../localStorage/localStorage";
+import toast, { Toaster } from "react-hot-toast";
 
 function formatDate(dateString) {
   return format(new Date(dateString), "dd MMMM yyyy, HH:mm");
@@ -26,12 +28,13 @@ const EventDetails = () => {
   } = event;
 
   const handleJoinEvent = () => {
-    alert("You have joined the event!");
-    // Add your logic for joining the event here
+    storeToLocalStorage(event);
+    toast.success("You have joined the event!");
   };
 
   return (
     <div className="card bg-base-100 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-xl">
+      <Toaster />
       <figure>
         <img src={imageUrl} alt={eventName} />
       </figure>
