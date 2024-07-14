@@ -4,4 +4,10 @@ const getItemsFromStorage = () => {
   return JSON.parse(item);
 };
 
-export { getItemsFromStorage };
+const storeToLocalStorage = (event) => {
+  const prevItems = getItemsFromStorage();
+  const newList = [...prevItems, event];
+  localStorage.setItem("event-management", JSON.stringify(newList));
+};
+
+export { getItemsFromStorage, storeToLocalStorage };
