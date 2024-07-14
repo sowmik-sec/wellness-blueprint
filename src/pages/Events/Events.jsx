@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Event from "./Event";
+import Event from "../Events/Event";
 import { useState } from "react";
 
 function Events() {
