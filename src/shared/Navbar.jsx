@@ -22,6 +22,11 @@ function Navbar() {
       <li>
         <NavLink to={"/about"}>About Us</NavLink>
       </li>
+      {user && (
+        <li>
+          <NavLink to={"/my-events"}>My Events</NavLink>
+        </li>
+      )}
     </>
   );
   return (
